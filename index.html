@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matching System</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<h1>Matching System</h1>
+
+<h2>Businesses</h2>
+<table id="businessTable">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Skills</th>
+            <th>Image</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- ข้อมูลจะถูกแสดงที่นี่ -->
+    </tbody>
+</table>
+
+<h2>Interns</h2>
+<table id="internTable">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Skills</th>
+            <th>Image</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- ข้อมูลจะถูกแสดงที่นี่ -->
+    </tbody>
+</table>
+
+<button onclick="matchPairs()">Match Pairs</button>
+<div id="matchResult"></div>
+
+<!-- ปุ่มเพิ่มข้อมูล -->
+<button onclick="showAddForm('business')">Add Business</button>
+<button onclick="showAddForm('intern')">Add Intern</button>
+
+<!-- ฟอร์มเพิ่มข้อมูล -->
+<div id="addForm" style="display: none;">
+    <input type="text" id="nameInput" placeholder="Name">
+    <input type="text" id="skillsInput" placeholder="Skills">
+    <input type="text" id="imageInput" placeholder="Image URL">
+    <button onclick="addItem()">Add</button>
+    <button onclick="hideAddForm()">Cancel</button>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
+
