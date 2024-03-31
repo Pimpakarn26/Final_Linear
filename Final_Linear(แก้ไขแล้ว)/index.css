@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* CSS สำหรับรูปภาพในตารางธุรกิจ */
+#businessTable img {
+    max-width: 100px; /* กำหนดความกว้างสูงสุดของรูปภาพเป็น 100px */
+    height: auto; /* รักษาสัดส่วนของรูปภาพ */
+  }
+  
+  /* CSS สำหรับรูปภาพในตารางนักศึกษา */
+  #internTable img {
+    max-width: 80px; /* กำหนดความกว้างสูงสุดของรูปภาพเป็น 80px */
+    height: auto; /* รักษาสัดส่วนของรูปภาพ */
+  }
+
+  /* CSS */
+#matchResult {
+    display: none; /* ซ่อนผลลัพธ์เริ่มต้น */
+    margin-top: 20px;
+  }
+  
+  ul {
+    list-style-type: none; /* เอา bullet points ออก */
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px; /* ระยะห่างระหว่างรายการ */
+  }
+  
+  .match-images, .match-images img   {
+    display: flex;
+    justify-content: space-around; /* จัดรูปภาพให้อยู่กึ่งกลางและมีระยะห่างเท่าๆ กัน */
+    margin-top: 10px;
+    width: 100px; /* กำหนดขนาดของรูปภาพ */
+    height: auto; /* ความสูงจะปรับตามอัตราส่วน */
+    border-radius: 50%; /* ทำให้รูปภาพมีเส้นขอบโค้ง */
+  }
+  
+  #addForm {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  #addForm input[type="text"],
+  #addForm input[type="file"] {
+    width: calc(100% - 10px);
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #addForm button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  #addForm button:hover {
+    background-color: #45a049;
+  }
+  
+  #addForm button:last-child {
+    background-color: #f44336;
+    margin-left: 10px;
+  }
+  
+  #addForm button:last-child:hover {
+    background-color: #d32f2f;
+  }
+  
+  
